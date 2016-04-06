@@ -1,0 +1,4 @@
+# @TEST-EXEC: bro -C -r $TRACES/smb/smbtorture.pcap %INPUT
+# @TEST-EXEC: btest-diff ntlm.log
+
+@load base/protocols/smb
